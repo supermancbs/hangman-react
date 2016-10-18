@@ -1,10 +1,15 @@
 import React from 'react';
 
-const TakeGuess = () => {
+const TakeGuess = ( {handleSubmit} ) => {
+
   return (
     <div>
-    I AM GUessing
+      <form onSubmit={handleSubmit(this)}>
+        <input type="text"/>
+        <input type="submit" value="Take Guess"/>
+      </form>
     </div>
+
   )
 }
 
